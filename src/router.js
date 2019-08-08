@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/views/Home.vue';
-import Beers from '@/views/Beers.vue';
+import BeersList from '@/views/BeersList.vue';
 import Favourites from '@/views/Favourites.vue';
 
 Vue.use(Router);
@@ -13,9 +13,9 @@ routes: [
     component: Home
   },
   {
-    path: '/beers',
-    home: 'beers',
-    component: Beers
+    path: '/beerslist',
+    home: 'beerslist',
+    component: BeersList
   },
   {
     path: '/favourites',
