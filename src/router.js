@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/views/Home.vue';
-import BeersList from '@/views/BeersList.vue';
 import Favourites from '@/views/Favourites.vue';
 
 Vue.use(Router);
@@ -9,18 +8,12 @@ const router = new Router({
 routes: [
   {
     path: '',
-    home: 'home',
+    name: 'home',
     component: Home
   },
   {
-    path: '/beerslist',
-    home: 'beerslist',
-    component: BeersList,
-    props: true
-  },
-  {
     path: '/favourites',
-    home: 'favourites',
+    name: 'favourites',
     component: Favourites
   }
 ]

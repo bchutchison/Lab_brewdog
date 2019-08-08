@@ -1,17 +1,16 @@
 <template lang="html">
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/beerslist">Beers List</router-link>
+      <router-link :to="{ name: 'home' }">Beers</router-link>
       <router-link to="/favourites">Favourites</router-link>
     </nav>
-    <router-view />
+    <router-view :beers="beers" />
 
   </div>
 </template>
 
 <script>
-import BeersList from './views/BeersList.vue'
+import BeersList from './components/BeersList.vue'
 
 export default {
   name: 'app',
@@ -24,9 +23,6 @@ export default {
     fetch('https://api.punkapi.com/v2/beers')
     .then(res => res.json())
     .then(beers => this.beers = beers)
-  },
-  components: {
-    "beers-list": BeersList
   }
 }
 
