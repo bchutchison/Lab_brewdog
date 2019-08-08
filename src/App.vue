@@ -6,9 +6,7 @@
       <router-link to="/favourites">Favourites</router-link>
     </nav>
     <router-view />
-    <div class="main-container">
-      <beers-list :beers='beers'></beers-list>
-    </div>
+
   </div>
 </template>
 

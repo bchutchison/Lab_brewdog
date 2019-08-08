@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="">
-    <main-header title='Beers' />
+    <main-header title='Beer List' />
     <div>
       <ul>
         <li v-for="(beer, index) in beers" :beer="beer" :key="index" >{{beer.name}}</li>

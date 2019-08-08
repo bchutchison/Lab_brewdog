@@ -15,7 +15,8 @@ routes: [
   {
     path: '/beerslist',
     home: 'beerslist',
-    component: BeersList
+    component: BeersList,
+    props: true
   },
   {
     path: '/favourites',

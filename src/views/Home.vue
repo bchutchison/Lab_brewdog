@@ -1,6 +1,6 @@
 <template lang="html">
 <div id="">
-  <main-header title='home' />
+  <main-header title='Beers' />
 </div>
 </template>
 
